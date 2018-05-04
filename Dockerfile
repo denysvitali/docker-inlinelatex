@@ -1,4 +1,5 @@
-FROM ubuntu:latest
+FROM ubuntu:lates
+ENV TZ=Europe/Zurich
 RUN apt-get update
 RUN apt-get install -y python3 python3-pip git curl wget python texlive texlive-latex-extra ghostscript imagemagick
 WORKDIR /app
