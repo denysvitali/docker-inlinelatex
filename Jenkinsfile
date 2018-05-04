@@ -4,7 +4,7 @@ node {
     }
 
     stage('Build Image'){
-        sh "docker build --pull -t dvitali/inlatex-bot:latest ."
+        sh "docker build -t dvitali/inlatex-bot:latest ."
     }
 
     stage('Push Image') {
